@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vamos Colapinto</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <button class="botonIzq" onclick="volverAlInicio()">↑</button>
+
+    <section id="inicio" class="banner">
+        <div class="banner-content">
+            <h1>Vamos Colapinto</h1>
+            <p>Hagamos un poco de ruido</p>
+            <button onclick="scrollToSection('nosotros')">Conocer más</button>
+        </div>
+    </section>
+
+    <section id="nosotros" class="nosotros-section">
+        <h2>Nosotros</h2>
+        <div class="tarjetas">
+            <div class="tarjeta">
+                <div class="contenido-tarjeta">
+                    <h3>Misión</h3>
+                </div>
+                <div class="reveal">Brindar un gran aporte a la carrera de Franco Colapinto, para que siempre haya una plaza ocupada por un piloto argentino en la Fórmula 1.</div>
+            </div>
+            <div class="tarjeta">
+                <div class="contenido-tarjeta">
+                    <h3>Visión</h3>
+                </div>
+                <div class="reveal">Ser uno de los patrocinadores líderes de su carrera.</div>
+            </div>
+            <div class="tarjeta">
+                <div class="contenido-tarjeta">
+                    <h3>Valores</h3>
+                </div>
+                <div class="reveal">Compromiso, Perseverancia, Respeto y pasión por el deporte son nuestros pilares fundamentales.</div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="servicios" class="servicios-section">
+        <h2>Servicios</h2>
+        <div id="lista-servicios">
+            <div class="servicio">
+                <h3>Apoyo Financiero para su Carrera</h3>
+                <p>Facilitamos oportunidades de patrocinio y contribuciones financieras destinadas a apoyar el desarrollo continuo de Franco Colapinto en la Fórmula 1.</p>
+            </div>
+            <div class="servicio">
+                <h3>Creación de Campañas de Visibilidad</h3>
+                <p>Desarrollamos campañas estratégicas para incrementar la visibilidad de Franco Colapinto en medios, destacando su potencial y generando interés entre equipos y patrocinadores.</p>
+            </div>
+    
+            <div id="extraServicios" style="display: none;">
+                <div class="servicio">
+                    <h3>Eventos Exclusivos para Patrocinadores</h3>
+                    <p>Organizamos eventos únicos donde patrocinadores pueden conocer de cerca a Franco Colapinto y ser parte de su historia en la Fórmula 1.</p>
+                </div>
+                <div class="servicio">
+                    <h3>Documentación y Respaldo de Rendimiento</h3>
+                    <p>Realizamos un seguimiento exhaustivo de su rendimiento y logros, proporcionando informes detallados para equipos de F1.</p>
+                </div>
+                <div class="servicio">
+                    <h3>Gestión de Red de Apoyo</h3>
+                    <p>Establecemos una red de apoyo que muestra el valor de su comunidad y su influencia como piloto.</p>
+                </div>
+            </div>
+        </div>
+    
+    <button id="verMasBtn" onclick="mostrarServicios()">Ver más servicios</button>
+
+    </section>
+
+    <section id="contacto" class="contacto-section">
+        <h2>Contacto</h2>
+        <form id="formularioContacto" onsubmit="enviarFormulario(event)">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" placeholder="Pepito Fulano">
+            
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" placeholder="elfulanito123@mail.com">
+            
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" pattern="[0-9]{10}" placeholder="3472392317">
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" rows="5" ></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+
+    <script src="./js/script.js"></script>
+</body>
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 Vamos Colapinto.</p>
+</footer>
+</html>
